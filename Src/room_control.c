@@ -53,11 +53,11 @@ void room_control_app_init(void)
 
     //Estado inicial del sistema de lámpara y puerta 
     current_state = ROOM_IDLE;
-    //Imprime estado inicial del sistema, porcentaje de la lámpara al 20% y puerta cerrada, sin modificar la lógica del entorno
+    //Se imprime estado inicial del sistema, porcentaje de la lámpara al 20% y puerta cerrada, sin modificar la lógica del entorno
     uart_send_string("Controlador de Sala v2.0");
     uart_send_string("Sistema inicializado:\r\n");
-    uart_send_string("PWM: 20%\r\n");
-    uart_send_string("Puerta cerrada\r\n");
+    uart_send_string("Lámpara: 20%\r\n");
+    uart_send_string("Puerta: Cerrada\r\n");
     room_control_send_status();
 
 }
