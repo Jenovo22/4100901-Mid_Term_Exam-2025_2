@@ -30,5 +30,14 @@ void room_control_app_init(void);
  *        Maneja timeouts, transiciones automáticas, etc.
  */
 void room_control_update(void);
+/**
+ * @brief Envía por UART el estado actual de la sala (VACÍA / OCUPADA).
+ */
+void room_control_send_status(void);
+
+/**
+ * @brief Envía el nivel actual de PWM por UART
+ */
+void room_control_send_pwm_status(void);
 
 #endif // ROOM_CONTROL_H
